@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Leaflet Project</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
+
+      <h1><a href="index.html">Explore SFPD</a></h1>
+      
+      <h2>A visualization of <span>Bay Area</span> neighborhood traffic stops </h2>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About This Project</a></li>
+          <li><a href="#resume">Visualization</a></li>
+          <li><a href="#services">How can we help?</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    
+    <!-- ======= About Individual ======= -->
+    <div class="counts container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box">
+            <img src="assets/img/al.jpg" class="img-fluid" alt="Alex Perry">
+            <p>Alex Perry</p>
+            <li>Flask Connect</li>
+            <li>Data Clean-up</li>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box">
+            <img src="assets/img/fr.jpg" class="img-fluid" alt="Francisco Lobeira">
+            <p>Francisco Lobeira</p>
+            <li>Data Visualization</li>
+            <li>Interactive Bar Chart</li>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <img src="assets/img/ni.jpg" class="img-fluid" alt="Nithya Narayanan">
+            <p>Nithya Narayanan</p>
+            <li>Leaflet JavaScript</li>
+            <li>Geojson Interactive Mapping</li>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <img src="assets/img/tr.jpg" class="img-fluid" alt="Tran Nguyen">
+            <p>Tran Nguyen</p>
+            <li>Data Visualization</li>
+            <li>HTML</li>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End About Individual -->
+
+    <!-- ======= Description  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Project Description</h2>
+      </div>
+      <p>This project is </p>
+      
+    </div><!-- End Description -->
+  </section><!-- End About Section -->
+
+  <!-- ======= Visualization Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container">
+      <div class="section-title">
+        <h2>Visualization</h2>
+        <p>Check Our Dashboards</p>
+      </div>
+      <!-- ======= insert Visualization Section JS======= -->
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-md-2">
+            <div class="well">
+              <h4>SFPD</h4>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Police Info</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body"></div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div id="bar"></div>
+          </div>
+          <div class="col-md-5">
+            <div id="gauge"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="bubble"></div>
+          </div>
+        </div>
+      </div>
+
+  </section><!-- End visualization Section -->
+
+  <!-- ======= Help Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Question</h2>
+        <p>Our Sources</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><img src="assets/img/police_icon.jpg" class="img-fluid" alt="SPP"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">The Stanford Open Policing Project</a></h4>
+            <p>Open Source Police Data</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><img src="assets/img/ll.jpg" class="img-fluid" alt="ll"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">Leaflet                  </a></h4>
+            <p>An open-source JavaScript library
+              for mobile-friendly interactive maps</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><img src="assets/img/bt.jpg" class="img-fluid" alt="bt"><i class="bx bx-file"></i></div>
+            <h4><a href="">Bootstrap</a></h4>
+            <p>Build fast, responsive sites with Bootstrap</p>
+          </div>
+        </div>
+
+        
+
+  </section><!-- End Question Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>  
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="assets/js/plots.js"></script>
+
+</body>
+
+</html>

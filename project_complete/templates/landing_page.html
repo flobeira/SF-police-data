@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>San Francisco Police Stop Data</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header-tops">
+    <div class="container">
+
+      <h1><a href="landing_page.html">Explore SFPD</a></h1>
+      
+      <h2>A visualization of <span>Bay Area</span> neighborhood traffic stops </h2>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#header">Home</a></li>
+          <li><a href="#about">About This Project</a></li>
+          <li><a href="#resume">Visualization</a></li>
+          <li><a href="#services">How can we help?</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+
+    
+    <!-- ======= About Individual ======= -->
+    <div class="counts container" style ="padding:50px">
+      <div class="row">
+        <div class="section-title">
+          <h2>About us</h2>
+        </div>
+        <div class="row">
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <img src="static/assets/img/al.jpg" class="img-fluid" alt="Alex Perry">
+            <p>Alex Perry</p>
+            <li>Data Clean-up</li>
+            <li>Flask Connect</li>
+            <li>Interactive Mapping</li>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <img src="static/assets/img/fr.jpg" class="img-fluid" alt="Francisco Lobeira">
+            <p>Francisco Lobeira</p>
+            <li>Data Visualization</li>
+            <li>Bar Chart and Graph</li>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <img src="static/assets/img/ni.jpg" class="img-fluid" alt="Nithya Narayanan">
+            <p>Nithya Narayanan</p>
+            <li>Leaflet JavaScript</li>
+            <li>Geojson Interactive Mapping</li>
+            
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box">
+            <img src="static/assets/img/tr.jpg" class="img-fluid" alt="Tran Nguyen">
+            <p>Tran Nguyen</p>
+            <li>Data Visualization</li>
+            <li>HTML</li>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- End About Individual -->
+
+    <!-- ======= Description  ======= -->
+    <div class="skills container" style="padding:20px">
+
+      <div class="section-title">
+        <h2>Project Description</h2>
+      </div>
+      <div class="container" style ="padding:20px">
+       
+      <p style = "color:#bddbfc;font-size : 15px">This project is looking at San Francisco Police Department (SFPD) public data set from 2015 to examine traffic stops and arrests in relation to race and gender in Bay Area.
+        We use coding and programing languages such as Java Script and Python to analyze as well as visualize the data set. The goal of this project is to have the 
+        most current and accurate updated information on display to inform the public about SFPD.  </p>
+      <p style = "color:#bddbfc;font-size : 15px">Our findings indicate that while most incidents are related to white people, black people
+      have the most arrest counts follow by white and hispanic. </p>
+      </div>
+    </div><!-- End Description -->
+  </section><!-- End About Section -->
+
+  <!-- ======= Visualization Section ======= -->
+  <section id="resume" class="resume">
+    <div class="container" style="padding:50px;">
+      <div class="section-title">
+        <h2>Visualization</h2>
+        <p><a href="visual1" style ="color:white">Check Our Interactive Map</a></p>
+        <p><a href="visual2" style ="color:white">Check Our Interactive Charts</a></p>
+      </div>
+      <!-- ======= insert Visualization Section JS======= -->
+
+    
+  <div class="row">
+  <div class="container">
+    <img src="static/assets/img/Bar_Arrests_by_Race.jpg" class="img-fluid" alt="Bar_Arrests_by_Race" width="300" height="400" hspace="100">
+    <img src="static/assets/img/Bar_Incidents_by_Race.jpg" class="img-fluid" alt="Bar_Incidents_by_Race" width="310" height="410" hspace="100">
+  </div>
+</div>
+<br>
+<div class="row">
+<div class="container">
+  <img src="static/assets/img/Pie_Black_arrests.jpg" class="img-fluid" alt="Pie_Black_arrests" width="250" height="250" hspace="50">
+  <img src="static/assets/img/Pie_Hispanic_arrests.jpg" class="img-fluid" alt="Pie_Hispanic_arrests" width="250" height="250" hspace="50">
+  <img src="static/assets/img/Pie_White_arrests.jpg" class="img-fluid" alt="Pie_White_arrests" width="250" height="250" hspace="10">
+  </div>
+</div> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- D3 JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+
+  
+  
+
+
+  </section><!-- End visualization Section -->
+
+  <!-- ======= Help Section ======= -->
+  <section id="services" class="services">
+    <div class="container" style="padding:40px">
+
+      <div class="section-title">
+        <h2>Question</h2>
+        <p>Our Sources</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><img src="static/assets/img/police_icon.jpg" class="img-fluid" alt="SPP"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">The Stanford Open Policing Project</a></h4>
+            <p>Open Source Police Data</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div class="icon-box">
+            <div class="icon"><img src="static/assets/img/ll.jpg" class="img-fluid" alt="ll"><i class="bx bxl-dribbble"></i></div>
+            <h4><a href="">Leaflet                  </a></h4>
+            <p>An open-source JavaScript library
+              for mobile-friendly interactive maps</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+          <div class="icon-box">
+            <div class="icon"><img src="static/assets/img/bt.jpg" class="img-fluid" alt="bt"><i class="bx bx-file"></i></div>
+            <h4><a href="">Bootstrap</a></h4>
+            <p>Build fast, responsive sites with Bootstrap</p>
+          </div>
+        </div>
+
+        
+
+  </section><!-- End Question Section -->
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>  
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  
+  <!-- Main JS File -->
+  <script src="static/assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="static/assets/js/plots.js"></script>
+  <script src="static/js/visual2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arrests, Gender, & Total Stops Summary</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body style="background-color:white;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>San Francisco Police Stop Data (2015)</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Filter by Gender</h5>
+          <select id="selDataset">
+          </select>
+          <br>
+          <br>
+          <p>
+            <b>Total Population*:</b>
+            863,836
+            <br>
+            <br>
+            <b>Total Population<br>
+            by Race**</b>
+            <br>
+            <br>
+            <b>White:</b>
+            442,287
+            <br>
+            <br>
+            <b>Hispanic:</b>
+            128,619
+            <br>
+            <br>
+            <b>Black:</b>
+            55,695
+            <br>
+            <br>
+            <b>Asian/Pacific Islander:</b>
+            314, 841
+            <br>
+          </p>
+        </div>
+
+      </div>
+      <div class="col-md-5">
+        <div id="bar1"></div>
+        <canvas id="myChart1" width="400" height="400"></canvas>
+      </div>
+      <div class="col-md-5">
+        <div id="bar2"></div>
+        <canvas id="myChart2" width="400" height="400"></canvas>
+      </div>
+    </div>
+    <div class="alert alert-secondary" role="alert">
+      <br>
+      <br>
+      <i>* Source: https://www.google.com/publicdata/explore?ds=kf7tgg1uo9ude_&met_y=population&idim=sub_county:0667000:0666000:0668000&hl=en&dl=en</i>
+      <br>
+      <i>** Source:https://data.census.gov/cedsci/table?d=ACS%205-Year%20Estimates%20Data%20Profiles&table=DP05&tid=ACSDP5Y2015.DP05&g=1600000US0667000&hidePreview=true&moe=false</i>
+      <br>
+      <i>**Race population data are Estimates taken from the US Census Bureau/American Community Survey</i>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  <!-- Chartis Scripts-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js" integrity="sha256-8zyeSXm+yTvzUN1VgAOinFgaVFEFTyYzWShOy9w7WoQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha256-TQq84xX6vkwR0Qs1qH5ADkP+MvH0W+9E7TdHJsoIQiM=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha256-nZaxPHA2uAaquixjSDX19TmIlbRNCOrf5HO1oHl5p70=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css" integrity="sha256-IvM9nJf/b5l2RoebiFno92E5ONttVyaEEsdemDC6iQA=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css" integrity="sha256-aa0xaJgmK/X74WM224KMQeNQC2xYKwlAt08oZqjeF0E=" crossorigin="anonymous" />
+  
+  <!-- D3 JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+
+  <!-- my JS Code -->
+  <script src="../static/js/visual2.js"></script>
+  
+
+</body>
+
+</html>
